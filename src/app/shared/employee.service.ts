@@ -12,6 +12,7 @@ export class EmployeeService {
   constructor( private http:HttpClient) { }
 
   postEmployee(formData:Employee){
+    console.log('Vo');
   return this.http.post(this.rootURL+'/Employee',formData);
   }
  refreshList()
